@@ -89,6 +89,52 @@
             text-decoration: underline;
             cursor: pointer;
         }
+        @media screen and (max-width: 1200px) {
+            .navbar ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+            }
+        }
+        
+        @media screen and (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            .navbar ul {
+                flex-direction: column;
+                gap: 5px;
+            }
+            .navbar ul li a {
+                padding: 10px 20px;
+            }
+            .subsection ul {
+                padding-left: 20px;
+            }
+        }
+        
+        @media screen and (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+            header {
+                padding: 10px 15px;
+            }
+            .navbar ul {
+                gap: 5px;
+            }
+            .subsection {
+                padding: 10px;
+            }
+            .projects .tech-stack span {
+                font-size: 12px;
+                padding: 3px 8px;
+            }
+            .subsection h3 {
+                font-size: 18px;
+            }
+        }        
     </style>
 </head>
 <body>
