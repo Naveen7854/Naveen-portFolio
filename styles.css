@@ -187,4 +187,145 @@ header .button .btn:hover{
     height: 296px;
     border-radius: 50%;
 }
+/* Base styles remain the same */
+
+@media screen and (max-width: 1200px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    header .navbar ul {
+        gap: 15px;
+    }
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .hero .right {
+        margin-left: 0;
+        text-align: center;
+    }
+    .right p {
+        width: 90%;
+    }
+    .hero .left {
+        margin-right: 0;
+        margin-top: 20px;
+    }
+    .hero .left .image {
+        width: 250px;
+        height: 250px;
+    }
+    .left .image img {
+        width: 250px;
+        height: 246px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    header .logo h2 {
+        font-size: 24px;
+    }
+    header .navbar ul li a {
+        font-size: 16px;
+    }
+    header .button .btn {
+        font-size: 16px;
+        width: 100px;
+        padding: 6px;
+    }
+    .right h1 {
+        font-size: 32px;
+    }
+    .right h2 {
+        font-size: 28px;
+    }
+    .hero .right .social-media {
+        margin-left: 0;
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 20px 10px;
+    }
+    header .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .right h1 {
+        font-size: 28px;
+    }
+    .right h2 {
+        font-size: 24px;
+    }
+    .right p {
+        font-size: 14px;
+    }
+    .right .buttton .h-btn {
+        font-size: 14px;
+        padding: 8px;
+    }
+    .hero .left .image {
+        width: 200px;
+        height: 200px;
+    }
+    .left .image img {
+        width: 200px;
+        height: 196px;
+    }
+    .right .social-media li {
+        width: 35px;
+        height: 35px;
+    }
+    .right .social-media li a {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    header .logo h2 {
+        font-size: 20px;
+    }
+    header .navbar ul li a {
+        font-size: 14px;
+    }
+    .right h1 {
+        font-size: 24px;
+    }
+    .right h2 {
+        font-size: 20px;
+    }
+    .right p {
+        font-size: 12px;
+    }
+    .right .buttton {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .right .buttton .h-btn {
+        width: 100px;
+    }
+    .hero .left .image {
+        width: 150px;
+        height: 150px;
+    }
+    .left .image img {
+        width: 150px;
+        height: 146px;
+    }
+    .right .social-media {
+        margin-top: 20px;
+    }
+    .right .social-media li {
+        width: 30px;
+        height: 30px;
+    }
+    .right .social-media li a {
+        font-size: 16px;
+    }
+}
 
