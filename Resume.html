@@ -23,7 +23,7 @@
             overflow-x: hidden;
         }
         body {
-            background-image: url('Homegfhgh.jpeg'); /* Replace with your image path */
+            background-image: url('Homegfhgh.jpeg'); 
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
@@ -116,13 +116,107 @@
             color: yellowgreen;
         }
         main {
-            padding-top: 80px; /* Ensure content starts below the header */
+            padding-top: 80px; 
         }
         .job-title {
             font-weight: bold;
             color: yellowgreen;
             
-        }        
+        } 
+/* Media Queries */
+@media screen and (max-width: 1200px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar ul {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .logo h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .section {
+        margin-bottom: 30px;
+        padding: 15px;
+    }
+    .subsection {
+        padding: 10px;
+    }
+    h1, h2, h3 {
+        font-size: 1.5rem;
+    }
+    .projects .tech-stack {
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+    .projects .tech-stack span {
+        padding: 5px 8px;
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+    .logo h2 {
+        font-size: 1.5rem;
+    }
+    h1, h2, h3 {
+        font-size: 1.3rem;
+    }
+    .projects .tech-stack span {
+        font-size: 0.8rem;
+        padding: 4px 6px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    body {
+        font-size: 0.9rem;
+    }
+    .section {
+        padding: 10px;
+    }
+    .subsection {
+        padding: 8px;
+    }
+    h1, h2, h3 {
+        font-size: 1.2rem;
+    }
+    .navbar ul {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .navbar ul li {
+        margin: 5px 0;
+    }
+    .projects .tech-stack {
+        justify-content: center;
+        gap: 5px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+    .logo h2 {
+        font-size: 1.2rem;
+    }
+    .navbar ul {
+        grid-template-columns: 1fr;
+    }
+    .projects .tech-stack span {
+        font-size: 0.7rem;
+    }
+}       
     </style>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
