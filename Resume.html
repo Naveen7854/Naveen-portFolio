@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Naveen Banoth</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        body {
+            position: relative;
+            color: #fff;
+            background-color: rgb(1, 1, 34);
+            overflow-x: hidden;
+        }
+        body {
+            background-image: url('Homegfhgh.jpeg'); /* Replace with your image path */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            color: white;
+            line-height: 1.6;
+            position: relative;
+        }
+        /* Optional: Semi-transparent overlay for better readability */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Adjust transparency here */
+            z-index: -1;
+        }
+        h1, h2, h3 {
+            color: yellowgreen;
+        }
+        .section {
+            margin-bottom: 40px;
+            padding: 20px;
+        }
+        .section:hover {
+            background-color: rgba(255, 255, 255, 0.05);
+            border-left: 5px solid yellowgreen;
+            padding-left: 10px;
+            transition: background-color 0.3s ease, border-left 0.3s ease;
+        }
+        .subsection {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+        }
+        .subsection h3 {
+            margin-bottom: 10px;
+        }
+        .projects .tech-stack {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .projects .tech-stack span {
+            padding: 5px 10px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .projects .tech-stack span:hover, .projects .tech-stack span.active {
+            background: yellowgreen;
+            color: black;
+        }
+        .active-link {
+            color: yellowgreen;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            margin-bottom: 20px;
+        }
+        .logo h2 {
+            color: yellowgreen;
+            margin: 0;
+        }
+        .navbar ul {
+            display: flex;
+            gap: 15px;
+        }
+        .navbar ul li a {
+            color: white;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        .navbar ul li a:hover {
+            color: yellowgreen;
+        }
+        main {
+            padding-top: 80px; /* Ensure content starts below the header */
+        }
+        .job-title {
+            font-weight: bold;
+            color: yellowgreen;
+            
+        }        
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const techStacks = document.querySelectorAll('.tech-stack span');
+            techStacks.forEach(tech => {
+                tech.addEventListener('click', () => {
+                    techStacks.forEach(t => t.classList.remove('active'));
+                    tech.classList.add('active');
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo"><h2>Naveen Banoth</h2></div>
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Resume.html">Resume</a></li>
+                <li><a href="Projects.html">Projects</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="section education">
+            <h2>Education</h2>
+            <div class="subsection">
+                <h3>Indian Institute of Information Technology, Allahabad</h3>
+                <p>Bachelor of Technology in Information Technology (IT) | CGPA: 8.10</p>
+            </div>
+            <div class="subsection">
+                <h3>Bhavitha Junior College, Suryapet</h3>
+                <p>Class 12th | Percentage: 98.3%</p>
+            </div>
+            <div class="subsection">
+                <h3>ZPHS Chivvemla, Suryapet</h3>
+                <p>Class 10th | Percentage: 92%</p>
+            </div>
+        </section>
+
+        <section class="section work-experience">
+            <h2>Work Experience</h2>
+            <div class="subsection">
+                <h3>ProDigy Infotech</h3>
+                <p><span class="job-title">Software Engineer Intern</span> | Sep 2024– Oct 2024</p>
+                <ul>
+                    <li>Developed an Image-to-Image Translation Model using Conditional GAN (pix2pix).</li>
+                    <li>Enhanced quality of image translations while ensuring scalable model architecture.</li>
+                </ul>
+            </div>
+        </section>
+        
+
+        <section class="section projects">
+            <h2>Projects</h2>
+            <div class="subsection">
+                <h3>EstateFlow</h3>
+                <div class="links">
+                    <p><a href="https://github.com/Naveen7854/EstateFlow" class="active-link" target="_blank">GitHub Link</a> |
+                    <a href="https://live-link-here.com" class="active-link" target="_blank">Live Link</a>
+                    </p>
+                </div>
+                <ul>
+                    <li>Dynamic real estate marketplace web application for listing, searching, and managing properties.</li>
+                    <li>CRUD operations with MongoDB and JWT/Google OAuth for authentication.</li>
+                    <li>Advanced search filtering by price, property type, etc.</li>
+                </ul>
+                <div class="tech-stack">
+                    <span>ReactJS</span>
+                    <span>MongoDB</span>
+                    <span>NodeJS</span>
+                    <span>ExpressJS</span>
+                    <span>Firebase</span>
+                    <span>JWT</span>
+                    <span>Redux Toolkit</span>
+                </div>
+            </div>
+            
+            <div class="subsection">
+                <h3>FoodDeli</h3>
+                <div class="links">
+                    <p><a href="https://github.com/Naveen7854/EstateFlow" class="active-link" target="_blank">GitHub Link</a> |
+                    <a href="https://live-link-here.com" class="active-link" target="_blank">Live Link</a>
+                    </p>
+                </div>
+                <ul>
+                    <li>Web-based food delivery app with shopping cart and Stripe for payment processing.</li>
+                    <li>Interactive food exploration menu with secure transactions.</li>
+                </ul>
+                <div class="tech-stack">
+                    <span>MongoDB</span>
+                    <span>ExpressJS</span>
+                    <span>ReactJS</span>
+                    <span>NodeJS</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section technical-skills">
+            <h2>Technical Skills</h2>
+            <div class="subsection">
+                <h3>Programming Languages</h3>
+                <p>C++, C, JavaScript, Python, SQL, HTML, CSS</p>
+            </div>
+            <div class="subsection">
+                <h3>Technologies/Frameworks</h3>
+                <p>Tailwind CSS, Node.Js, Express.Js, Redux</p>
+            </div>
+            <div class="subsection">
+                <h3>Cloud/Databases</h3>
+                <p>MySQL, MongoDB</p>
+            </div>
+            <div class="subsection">
+                <h3>Relevant Coursework</h3>
+                <p>Data Structures and Algorithms, Operating Systems, Computer Networks, Database Management System, Object-Oriented Programming (OOP), Machine Learning, Deep Learning</p>
+            </div>
+        </section>
+        
+
+        <section class="section achievements">
+            <h2>Achievements</h2>
+            <div class="subsection">
+                <ul>
+                    <li>Achieved Global rank of 113, 243, and 571 in <a href="https://practice.geeksforgeeks.org/" class="active-link" target="_blank">GeeksforGeeks </a>Weekly Contests.</li>
+                    <li>Secured Global rank of 1159, 1390, and 1687 in <a href="https://www.codechef.com/" class="active-link" target="_blank">CodeChef </a>Weekly Contests.</li>
+                    <li>Solved 1000+ coding questions on various <a href="https://practice.geeksforgeeks.org/" class="active-link" target="_blank">Coding </a> platforms.</li>
+                </ul>
+            </div>
+        </section>
+        <section class="section leadership">
+            <h2>Leadership/Position of Responsibilities</h2>
+            <div class="subsection">
+                <ul>
+                    <li>Lead Orientation Camp held at MNNIT Allahabad on behalf of the IIIT Allahabad team, on the birthday of Prof. M.N. Saha.</li>
+                </ul>
+            </div>
+        </section>
+        
+    </main>
+</body
